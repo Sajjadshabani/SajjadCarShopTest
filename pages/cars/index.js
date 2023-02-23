@@ -1,4 +1,5 @@
-import Cars from "@/components/template/cars/Cars";
+import Cars from "@/components/template/CarsPage";
+
 
 
 const Details = () => {
