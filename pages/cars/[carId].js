@@ -1,18 +1,20 @@
 import { useRouter } from 'next/router';
-import React from 'react';
+
+// Car Data 
 import carsData from '@/data/carsData';
 
-const CarDetails = () => {
+// Template
+import CarDetails from '@/components/template/CarDetails';
+
+const CarDetail= () => {
     const route = useRouter() ;
     const {carId} = route.query ;
     const carDetails = carsData[carId - 1] ;
 
     console.log(carDetails);
     return (
-        <div>
-            detail
-        </div>
+        <CarDetails {...carDetails} />
     );
 };
 
-export default CarDetails;
+export default CarDetail;
