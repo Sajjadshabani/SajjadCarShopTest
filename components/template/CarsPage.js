@@ -1,9 +1,8 @@
 import styles from "./CarsPage.module.css" ;
-import carsData from "@/data/carsData";
 import Card from "../module/Card";
 
 
-const Cars = () => {
+const Cars = ({carsData}) => {
     return (
         <div className={styles.container}>
             {

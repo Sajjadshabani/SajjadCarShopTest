@@ -13,7 +13,7 @@ function CarsList({ data }) {
   return (
     <div className={styles.container}>
       <div className={styles.back} onClick={backHandler}>
-        <Back />
+        <Back /> 
         <p>back</p>
       </div>
       <div className={styles.cards}>
